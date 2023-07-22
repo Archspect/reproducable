@@ -1,0 +1,3 @@
+[submodule "Vendor/flecs"]
+	path = Vendor/flecs
+	url = https://github.com/SanderMertens/flecs

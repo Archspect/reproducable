@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.26)
+project(reproducable)
+add_executable(${PROJECT_NAME} Source/main.cpp Source/module.cpp)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+include_directories(Vendor/flecs/include)
+add_subdirectory(Vendor/flecs)
+target_link_libraries(${PROJECT_NAME} flecs::flecs_static)
